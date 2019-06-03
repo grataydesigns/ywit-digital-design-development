@@ -381,7 +381,7 @@ template {
  }
 
  body {
-   background-color: var(--color-background-light);
+   background-color: var(--color-background-white);
    color: var(--color-text-primary);
    line-height: var(--font-line-height-body);
    font-family: var(--font-serif);
@@ -577,3 +577,63 @@ template {
   text-decoration: none;
   text-transform: uppercase;
  }
+
+/* ==========================================================================
+   Blog Navigation
+   ========================================================================== */
+
+.pagination {
+  margin-bottom: 60px;
+}
+
+.pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-list li:first-child {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.pagination-list li:last-child {
+  grid-column-start: 19;
+  grid-column-end: 21;
+  text-align: right;
+}
+
+.pagination-link {
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans-serif);
+  font-size: 34px;
+  font-weight: var(--font-weight-bold);
+  line-height: 42px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  background-color: var(--color-background-light);
+  padding: 130px 0;
+  text-align: center;
+}
+
+footer img {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.footer-fine-print {
+  color: var(--color-text-detail);
+  font-family: var(--font-sans-serif);
+  margin: 0;
+}
+
+footer .contributor {
+  color: #000000;
+}
