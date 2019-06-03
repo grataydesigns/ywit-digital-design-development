@@ -408,6 +408,7 @@ template {
  
   header {
     margin-top: 80px;
+    margin-bottom: 210px;
   }
  
   .logo {
@@ -478,3 +479,101 @@ template {
    text-transform: uppercase;
  }
 
+ /* ==========================================================================
+    Main content and article summary
+    ========================================================================== */
+ 
+ .article-list {
+  grid-column-start: 5;
+  grid-column-end: 21;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
+
+ .article-list > li {
+   margin-bottom: 100px;
+ }
+
+ article header {
+  margin: 0 auto 80px;
+  max-width: 780px;
+  text-align: center;
+ }
+
+ .article-title {
+   color: var(--color-text-secondary);
+   font-family: var(--font-sans-serif);
+   font-size: 46px;
+   font-weight: var(--font-weight-bold);
+   line-height: 57px;
+   margin: 0 0 30px;
+ }
+
+ .article-metadata-list {
+   color: var(--color-text-detail);
+   display: inline-flex;
+   font-family: var(--font-sans-serif);
+   font-size: 14px;
+   line-height: 18px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .article-metadata-list li {
+   margin-right: 20px;
+   padding-right: 20px;
+   position: relative;
+ }
+
+ .article-metadata-list li::after {
+   content: '\2022';
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .article-metadata-list li:last-child::after {
+   content: none;
+ }
+
+ .article-container img {
+   display: block;
+   margin-bottom: 80px;
+   width: 100%;
+ }
+
+ .article-content {
+   max-width: 780px;
+   margin: 0 auto 80px;
+ }
+
+ .article-content p {
+   margin: 0 0 48px;
+ }
+
+ .article-details {
+   text-align: center;
+ }
+
+ /*
+    Article Button
+    ========================================================================== */
+ 
+ .button {
+  background: var(--color-background-white);
+  border: 1px solid var(--color-border-component);
+  border-radius: 50px;
+  color: var(--color-text-primary);
+  display: inline-block;
+  font-family: var(--font-sans-serif);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: 18px;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
