@@ -402,7 +402,79 @@ template {
    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
  }
 
- p {
-   grid-column-end: 19;
-   grid-column-start: 7;
+ /* ==========================================================================
+    Header
+    ========================================================================== */
+ 
+  header {
+    margin-top: 80px;
+  }
+ 
+  .logo {
+   align-items: center;
+   display: inline-flex;
+   grid-column-start: 3;
+   grid-column-end: 5;
  }
+
+ /*
+    Style the divider
+    ========================================================================== */
+ 
+ .divider {
+   align-items: center;
+   color: #E7E7E7;
+   display: inline-flex;
+   text-align: center;
+ }
+
+ /*
+    Style the social link list
+    ========================================================================== */
+ 
+ .social {
+   align-items: center;
+   display: inline-flex;
+   grid-column-start: 6;
+   grid-column-end: 8;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .social a {
+   display: block;
+   padding: 0 13px;
+ }
+
+ /*
+    Style the main nav list and links
+    ========================================================================== */
+ 
+ .main-nav {
+   align-items: center;
+   display: inline-flex;
+   grid-column-start: 14;
+   grid-column-end: 24;
+ }
+
+ .main-nav ul {
+   align-items: center;
+   display: inline-flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .main-nav-link {
+   color: var(--color-link-nav);
+   display: block;
+   font-family: var(--font-sans-serif);
+   font-weight: var(--font-weight-bold);
+   font-size: 11px;
+   line-height: 14px;
+   padding: 0 53px;
+   text-decoration: none;
+   text-transform: uppercase;
+ }
+
