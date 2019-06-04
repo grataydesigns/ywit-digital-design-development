@@ -491,6 +491,12 @@ template {
   padding: 0;
  }
 
+ .article-detail {
+   grid-column-start: 5;
+   grid-column-end: 21;
+   margin-bottom: 80px;
+ }
+
  .article-list > li {
    margin-bottom: 100px;
  }
@@ -558,6 +564,66 @@ template {
    text-align: center;
  }
 
+/* ==========================================================================
+   Section within an article
+   ========================================================================== */
+
+.article-section header {
+  margin-bottom: 48px;
+}
+
+.article-section .article-section-title {
+  font-family: var(--font-sans-serif);
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  line-height: 30px;
+  margin: 0;
+  text-align: left;
+}
+
+/*
+   Blockquote within an article
+   ========================================================================== */
+
+blockquote {
+  background: var(--color-background-light);
+  margin: 0 0 80px;
+  padding: 80px 0;
+  text-align: center;
+}
+
+blockquote p {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  line-height: 30px;
+}
+
+blockquote cite {
+  color: var(--color-text-detail);
+  font-style: normal;
+}
+
+/*
+   Article footer
+   ========================================================================== */
+
+.article-footer {
+  border-top: 1px solid var(--color-border-component);
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+
+.article-footer-metadata-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+ 
+
  /*
     Article Button
     ========================================================================== */
@@ -594,11 +660,11 @@ template {
 
 .pagination-list li:first-child {
   grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-end: 10;
 }
 
 .pagination-list li:last-child {
-  grid-column-start: 19;
+  grid-column-start: 16;
   grid-column-end: 21;
   text-align: right;
 }
@@ -617,13 +683,13 @@ template {
    Footer
    ========================================================================== */
 
-footer {
+.site-footer {
   background-color: var(--color-background-light);
   padding: 130px 0;
   text-align: center;
 }
 
-footer img {
+.site-footer img {
   display: inline-block;
   margin-bottom: 60px;
 }
