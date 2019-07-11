@@ -10,7 +10,7 @@ The master branch contains the complete code for the blog and each feature branc
 * [feature/04-blog-pagination-and-footer](https://github.com/grataydesigns/ywit-digital-design-development/tree/feature/04-blog-pagination-and-footer) – Add the HTML and CSS for blog pagination and footer
 * [feature/05-article-detail-page](https://github.com/grataydesigns/ywit-digital-design-development/tree/feature/05-article-detail-page) – Adds the HTML and CSS for the article detail page, which also shares the header and footer from the homepage
 
-At the end of the course the girls should have a blog that resembles this design [Travel Blog Example]()
+At the end of the course the girls should have a blog that resembles this design [Travel Blog Example](https://ywit-blog.netlify.com/)
 
 ## Resources
 
